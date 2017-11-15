@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.before{
+		width: 100px;
+		height:100px;
+		border: 1px solid blue;
+	}
+	.before::before{
+		content:'bef';
+		width: 20px;
+		height: 20px;
+		background-color:red;
+	}
+	.before::after{
+		content:'aft';
+		width: 20px;
+		height: 20px;
+		background-color:blue;
+	}
+</style>
+</head>
+<body>
+	<input id='input1' type='radio'/>
+	<div class="before"></div>
+	<label for='input1'>点击我</label>
+	
+</body>
+</html>

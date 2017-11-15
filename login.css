@@ -1,0 +1,202 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: url(image/wlbpyc2lr1f.gif) no-repeat;
+	background-size: 100% 100%;
+}
+.container{
+	position: absolute;
+	width: 420px;
+	height:500px;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+.form-control{
+	background: rgba(021,021,021,.3);
+	color: #fff;
+}
+input::-webkit-input-placeholder {
+	         /* placeholder颜色  */
+      color: white!important;
+         /* placeholder字体大小  */
+      font-size: 12px;
+        /* placeholder位置  */
+       text-align: center;
+    }
+input{
+	text-align: center;
+	border-radius: 5px;
+}
+input:focus{
+    border-color:#ccc!important;   //设置为原来的颜色
+    box-shadow:none;
+}
+
+.videeContainer{
+	
+	width:100%;
+	height:100%;
+	z-index: -100;
+	position: absolute;
+}
+.video{
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+.upload-hide{
+	opacity: 0;
+	height:50px;
+	position: absolute;
+}
+/*.loginImg{
+	width: 100px;
+	height: 100px;
+}*/
+.file-replace{
+	display: block;
+	position: absolute;
+	font-size: 25px;
+	text-shadow: #FFA500;
+}
+.imgContainer{
+	overflow: hidden;
+	padding: 0 20px;
+}
+.imgAll{
+	overflow: hidden
+}
+.imgContent{
+	float: left;
+	width:100px;
+	height:100px;
+	position: relative;
+}
+.close{
+	opacity: 0.7;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.img{
+	width:100%;
+	height: 100%;
+}
+.btnContainer{
+	margin-top:20px;
+	text-align: center;
+	padding:0 20px;
+	box-sizing: border-box;
+}
+button{
+	width:300px;
+}
+input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {  
+    -webkit-text-fill-color: #ededed !important;  
+    -webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;  
+    background-color:transparent;  
+    background-image: none;  
+     transition: background-color 50000s ease-in-out 0s; //背景色透明  生效时长  过渡效果  启用时延迟的时间  
+}  
+input {  
+     background-color:transparent;  
+}  
+.icon{
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	cursor:pointer
+}
+.loginBefore{
+	width: 100%;
+	height:50px;
+	font-size: 36px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	margin-top:30px;
+}
+.form0,.form{
+	display: none;
+}
+.linkContainer{
+	margin-top:20px;
+}
+a{
+	color:white;
+	font-size: 16px;
+	text-align: center;
+}
+a:last-child{
+	float: right;
+}
+.iconBind{
+	font-size: 16px;
+	margin-left:15px;
+}
+.formBack{
+	margin:20px;
+	cursor: pointer;
+	width:100px;
+}
+.formTitle{
+	margin-left: 20px;
+}
+a {
+    display: inline-block;
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Boogaloo', cursive;
+    text-shadow: 0 1px 0 hsl(192, 100%, 21%),
+                 0 2px 0 hsl(192, 100%, 21%),
+                 0 3px 0 hsl(192, 100%, 21%),
+                 0 4px 0 hsl(192, 100%, 21%),
+                 0 5px 0 hsl(192, 100%, 21%),
+                 0 6px 1px hsla(0, 0%, 0%, .1),
+                 0 0 5px hsla(0, 0%, 0%, .1),
+                 0 1px 3px hsla(0, 0%, 0%, .3),
+                 0 3px 5px hsla(0, 0%, 0%, .2),
+                 0 5px 10px hsla(0, 0%, 0%, .25);
+    -webkit-transition: .2s;
+       -moz-transition: .2s;
+         -o-transition: .2s;
+            transition: .2s;
+}
+
+a:hover {
+    color: cyan
+    font-family: 'Boogaloo', cursive;
+    text-shadow: 0 1px 0 hsl(192, 100%, 28%),
+                 0 2px 0 hsl(192, 100%, 28%),
+                 0 3px 0 hsl(192, 100%, 28%),
+                 0 4px 0 hsl(192, 100%, 28%),
+                 0 5px 0 hsl(192, 100%, 28%),
+                 0 6px 1px hsla(0, 0%, 0%, .1),
+                 0 0 5px hsla(0, 0%, 0%, .1),
+                 0 1px 3px hsla(0, 0%, 0%, .3),
+                 0 3px 5px hsla(0, 0%, 0%, .2),
+                 0 5px 10px hsla(0, 0%, 0%, .25);
+}
+
+a:focus,
+a:active {
+    outline: none;
+    color: hsl(192, 100%, 21%);
+    text-shadow: 0 0 5px hsla(0, 0%, 0%, .1),
+                 0 0 3px hsla(0, 0%, 0%, .3),
+                 0 0 5px hsla(0, 0%, 0%, .2);
+    -webkit-transform: translateY(6px);
+       -moz-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+         -o-transform: translateY(6px);
+            transform: translateY(6px);
+}
